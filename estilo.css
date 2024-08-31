@@ -1,0 +1,68 @@
+body {
+    background: rgb(31, 8, 110);
+    background: radial-gradient(circle, rgba(35,6,129,1) 0%, rgb(248, 17, 163) 100%);
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    margin: auto;  
+    background: rgba(161, 14, 107, 0.411); 
+    border-bottom: 3px dashed #e230bf; /* Línea inferior */
+    margin-bottom: 60px; /* Margen inferior entre la barra y el contenido */
+    overflow: hidden;
+    padding: 1px 30px; /* Ajusta el padding según lo que necesites */   
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: auto; 
+}
+
+h1, h2 {
+    font-family: "Yu Gothic UI Semibold"; 
+    font-size: 34px;
+}
+
+.boton{
+    font-family: "Yu Gothic UI Semibold";
+    font-size: 16px;
+    background-color: rgb(77, 9, 122);
+    color: rgb(255, 255, 255);
+    border-radius: 16px;
+    border: none;
+    padding: 1% 4%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    margin-top: 10px;
+}
+.boton:hover{
+    cursor:pointer;
+    background-color: rgb(156, 12, 84) ;
+}
+
+section {
+    display: flex;
+    width: 700px;
+    height: 530px;
+}
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease-out;
+}
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
